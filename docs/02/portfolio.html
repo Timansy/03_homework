@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Some Stuff I Did</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Fonts & Icons-->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Fjalla+One|Hind+Madurai&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- local css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fading footstop code start -->
+    <!-- credit -->
+    <!-- https://stackoverflow.com/questions/23315031/how-to-create-a-hidden-navbar-with-bootstrap-that-shows-after-you-scroll -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+    <script type="text/javascript">
+        (function ($) {
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('#footstop').fadeIn(500);
+                    } else {
+                        $('#footstop').fadeOut(500);
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+    <!-- Fading bootstop end -->
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <nav class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index.html">About Me</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId"
+                        aria-expanded="true" aria-controls="section1ContentId">
+                        Portfolio <span role="none" class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </nav>
+
+    <!-- accordian and carousel -->
+    <nav id="accordianId" role="tablist" aria-multiselectable="true" class="d-none d-md-block">
+        <div id="section1ContentId" class="collapse show" role="tabpanel" aria-labelledby="section1HeaderId">
+            <div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="9500" data-toggle="collapse"
+                aria-expanded="false" aria-controls="collapseOne">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselId" data-slide-to="0"></li>
+                    <li data-target="#carouselId" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselId" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <article class="carousel-item">
+                        <img class="d-block w-100" src="/Assets/images/photos_Page_1.jpg" alt="Gaming slide">
+                        <div role="dialog" class="carousel-caption d-none d-md-block">
+                            <h1>About Me</h1>
+                            <h3>Everything you need to know.</h3>
+                            <a class="btn-success btn-lg" href="/index.html" role="button">About Me</a>
+                        </div>
+                    </article>
+                    <article class="carousel-item active">
+                        <img class="d-block w-100" src="/Assets/images/photos_Page_2.jpg" alt="Portfolio slide">
+                        <div role="dialog" class="carousel-caption d-none d-md-block">
+                            <h1>Portfolio</h1>
+                            <h3>Just some of the crazy awesome stuff I've done.</h3>
+                            <a type="button" class="btn btn-success btn-lg" class="nav-link" data-toggle="collapse"
+                                data-parent="#accordianId" href="#section1ContentId" aria-expanded="true"
+                                aria-controls="section1ContentId">Portfolio</a>
+                        </div>
+                    </article>
+                    <article class="carousel-item">
+                        <img class="d-block w-100" src="/Assets/images/photos_Page_3.jpg" alt="Contact slide">
+                        <div role="dialog" class="carousel-caption d-none d-md-block">
+                            <h1>Contact me</h1>
+                            <h3>Reach out. Let's talk!</h3>
+                            <a class="btn-success btn-lg" href="/contact.html" role="button">Contact Me</a>
+                        </div>
+                    </article>
+                </div>
+                <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- jumbotron -->
+    <section class="jumbotron jumbotron-fluid">
+        <div role="contentinfo" class="container">
+            <h1 class="display-4">Just the highlights</h1>
+            <p class="lead">A little bit of that and a whole bunch of ...</p>
+        </div>
+    </section>
+    <!-- content area -->
+    <section class="container-fluid">
+        <section role="row" class="row">
+            <div class="col-xs-6">
+                <div class="card bg-light text-white col-xs-8">
+                    <div id="wrap2">
+                        <iframe id="frame2" class="embed-responsive-item" src="https://atomandmolecule.com"></iframe>
+                    </div>
+                </div>
+                <div class="card col-xs-4">
+                    <!-- <div class="card-header">Header</div> -->
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="http://atomandmolecule.com">atomandmolecule</a></h5>
+                        <p class="card-text">Think about this site as a start to something really good. It's my personal
+                            site with more to come.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="col-xs-6">
+                <div class="card col-lg-2 col-sm-6">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="https://timansy.github.io/homework/">Bootcamp Homework</a></h5>
+                        <p class="card-text">I am such a show off. Seriously check this out.</p>
+                    </div>
+                </div>
+                <div class="card bg-dark text-white col-md-3 col-sm-6">
+                    <div id="wrap">
+                        <iframe id="frame" class="embed-responsive-item"
+                            src="https://timansy.github.io/homework/"></iframe>
+                    </div>
+                </div>
+            </div> -->
+            <footer class="card col-md-12">
+                <div role="cell" class="card-body"> &copy; 2020 Tim Brown
+                </div>
+            </footer>
+        </section>
+    </section>
+    <nav id="footstop" class="footer">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a type="button" class="btn btn-secondary" href="/index.html">About Me</a>
+            <a type="button" class="btn btn-secondary" href="/portfolio.html">Portfolio</a>
+            <button type="button" class="btn btn-secondary active">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
